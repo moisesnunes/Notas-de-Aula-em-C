@@ -99,11 +99,13 @@ Estas são as palavras reservadas em C e que não podem ser usadas como nome de 
 | static  | struct   | switch | typedef | union  | unsigned |
 | void    | volatile | while  |  -->
 
-| auto | break | case | char | const | continue |
-| default | do | double | else | enum | extern |
-| float | for | goto | if | int | long |
-| main | register | retur | short | signed | sizeof |
-| static | struct | switch | typedef | union | unsigned |
-| void | volatile | while |
+|         |          |        |         |        |          |
+| ------- | -------- | ------ | ------- | ------ | -------- |
+| auto    | break    | case   | char    | const  | continue |
+| default | do       | double | else    | enum   | extern   |
+| float   | for      | goto   | if      | int    | long     |
+| main    | register | return | short   | signed | sizeof   |
+| static  | struct   | switch | typedef | union  | unsigned |
+| void    | volatile | while  |         |        |          |
 
 Os tipos básicos de dados existentes em C são:
