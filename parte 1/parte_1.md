@@ -108,4 +108,40 @@ Estas são as palavras reservadas em C e que não podem ser usadas como nome de 
 | static  | struct   | switch | typedef | union  | unsigned |
 | void    | volatile | while  |         |        |          |
 
-Os tipos básicos de dados existentes em C são:
+Uma tabela mais atualizada com o padrão iso c23:
+
+|                 |               |                     |
+| --------------- | ------------- | ------------------- |
+| alignas (c23)   | extern        | sizeof              |
+| alignof (c23)   | false (c23)   | static              |
+| auto            | float         | static_assert (c23) |
+| bool (c23)      | for           | struct              |
+| break           | goto          | switch              |
+| case            | if            | thread_local (c23)  |
+| char            | inline        | true (c23)          |
+| const           | int           | typedef             |
+| constexpr (c23) | long          | typeof (c23)        |
+| continue        | nullptr (c23) | typeof_unqual (c23) |
+| default         | register      | union               |
+| do              | restrict      | unsigned            |
+| double          | return        | void                |
+| else            | short         | volatile            |
+| enum            | signed        | while               |
+
+Para uma definição mais completa veja o link: [KeyWords](https://en.cppreference.com/w/c/keyword.html)
+
+Quando variáveis são definidas, elas não possuem valores ainda. Nós damos valores às variáveis usando o operador de atribuição (=). Variáveis também podem ser inicializadas para conter valores quando são definidas.
+
+Para resumir: quando um programa é executado, uma variável é associada com:
+
+- um tipo: diz quantos bytes a variável ocupa, e como ela deve ser interpretada.
+
+- um nome: um identificador.
+
+- um endereço: o endereço do byte menos significativo do local da memória associado a variável.
+
+- um valor: o conteúdo real dos bytes associados com a variável; o valor da variável depende do tipo da variável; a definição da variável não dá valor a variável; o valor é dado pelo operador de atribuição, ou usando a função scanf().
+
+- Em C , nomes de variáveis devem ser declarados antes de serem usados. Se não for declarado, ocorrerá um erro de compilação.
+
+- Devem ser dados valores às variáveis antes que sejam utilizadas. Se você tentar utilizar a variável antes de especificar o seu valor, você obterá “lixo” (o que quer que esteja armazenado no endereço da variável na memória quando o programa começa sua execução), culminando com falha na execução do programa.
